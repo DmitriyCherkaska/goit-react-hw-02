@@ -1,13 +1,11 @@
-import some from "./Feedback.module.css";
-
-const Feedback = ({ feedback }) => {
+const Feedback = ({ feedback, totalFeedback, positiveFeedback }) => {
   return (
     <div>
       <p>Good: {feedback.good}</p>
       <p>Neutral: {feedback.neutral}</p>
       <p>Bad: {feedback.bad}</p>
-      <p>Total: {totalFeedback}</p>
-      <p>Positive: {positiveFeedback}%</p>
+      <p>Total Feedback: {totalFeedback}</p>
+      <p>Positive Feedback: {positiveFeedback}%</p>
     </div>
   );
 };

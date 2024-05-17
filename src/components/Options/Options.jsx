@@ -1,5 +1,3 @@
-import some from "./Options.module.css";
-
 const Options = ({ updateFeedback, resetFeedback, totalFeedback }) => {
   return (
     <div>
