@@ -36,6 +36,11 @@ const App = () => {
   return (
     <div>
       <Description />
+      <Options
+        updateFeedback={updateFeedback}
+        resetFeedback={resetFeedback}
+        totalFeedback={totalFeedback}
+      />
 
       {totalFeedback > 0 ? (
         <div>
@@ -48,12 +53,6 @@ const App = () => {
       ) : (
         <Notification message="No feedback yet" />
       )}
-
-      <Options
-        updateFeedback={updateFeedback}
-        resetFeedback={resetFeedback}
-        totalFeedback={totalFeedback}
-      />
     </div>
   );
 };
